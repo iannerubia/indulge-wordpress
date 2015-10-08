@@ -15,7 +15,6 @@
 		// Post thumbnail.
 		twentyfifteen_post_thumbnail();
 	?>
-	<img class="post-thumbnail" src="http://placehold.it/720x450" alt="">
 
 	<header class="entry-header">
 		<?php

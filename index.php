@@ -30,13 +30,20 @@ get_header(); ?>
 	                            <!-- blog item -->
 	                            <article class="post-item">
 	                            	<div class="post-thumbnail">
-	                                	<?php the_post_thumbnail( 'thumbnail' ); ?>
-	                                	<img class="img-responsive" src="http://placehold.it/750x430" alt="">                              		
+
+	                                	<?php 
+	                                		$img_arr = array(
+	                                			'class' => 'img-responsive'
+	                                		);
+
+	                                	the_post_thumbnail( 'full', $img_arr ); 
+	                                	?>
+	                                                       		
 	                            	</div>
 	                                <h2 class="post-title"> <?php the_title(); ?></h2>
 	                                <p class="post-meta">
 		                                <span><i class="fa fa-user"></i> <?php the_author(); ?></span>	                                
-		                                <span><i class="fa fa-clock-o"></i> <?php the_date(); ?></span>
+		                                <span><i class="fa fa-clock-o"></i> <?php the_date('Y'); ?></span>
 	                                </p>
 	                                <p class="post-excerpt">
 	                                    <?php echo(get_the_excerpt()); ?>                                  	
@@ -52,5 +59,6 @@ get_header(); ?>
 		</div> 
 	</div>
 </div>	
+
 
 <?php get_footer(); ?>

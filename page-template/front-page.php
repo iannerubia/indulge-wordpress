@@ -14,7 +14,7 @@
 get_header(); ?>
 
 	<!-- Section Categories-->
-	<div class="section section-categories border-top-light-blue">
+	<div class="section section-categories">
 		<div class="container">
 			<div class="row">
 				<h1 class="section-title text-center">Head-to-Toes Goodness</h1>
@@ -123,14 +123,14 @@ get_header(); ?>
 	<div class="section section-two-column section-indulgence">
 		<div class="container">
 			<div class="row">
-				<h2 class="section-title">Leave Your Stress with Blissful Abandon. <br>Indulge Now.</h2>
+				<h2 class="section-title h5">Leave Your Stress with Blissful Abandon. <br><span class="h1 lightblue">Indulge Now.</span></h2>
 			</div>
 			<div class="row">	
 				<div class="col-md-6 box box-giver">
 					<div class="inner vertical-parent ">
 						<div class="vertical-child">
 							<h2 class="box-title ">
-								<a href="#"> Find Available <br>Indulgence Giver</a>
+								<a href="#">For you</a>
 							</h2>
 						</div>					
 					</div>
@@ -138,10 +138,7 @@ get_header(); ?>
 				<div class="col-md-6 box box-post-job">
 					<div class="inner vertical-parent">
 						<div class="vertical-child">
-							<h2 class="box-title ">Post a Job</h2>
-							<p class="box-subtitle">Book Your Indulgence Givers for Your Event</p>
-							<a href="" class="btn btn-primary btn-green">Sign Up</a>			
-							<a href="" class="btn btn-lightblue">Log in</a>					
+							<h2 class="box-title "><a href="#">For your event</a></h2>			
 						</div>					
 					</div>
 				</div>

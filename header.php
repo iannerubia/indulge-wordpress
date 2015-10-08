@@ -15,6 +15,7 @@
 <meta name="viewport" content="width=device-width">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700,900' rel='stylesheet' type='text/css'>
 <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery.js"></script>
 
 <!--[if lt IE 9]>
@@ -86,14 +87,10 @@
 	<!-- Section - Hero -->
 	<?php 
 
-		if ( is_front_page() ) {
+		if ( !is_front_page() && is_home() ) {
 
 			get_template_part( "content", "hero" );
 
-		} else { 
-
-			// No Slider
-
-		}
+		} 
 
 	?>

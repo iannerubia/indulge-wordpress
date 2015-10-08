@@ -128,9 +128,8 @@ require_once('wp_bootstrap_navwalker.php')
 
 
 /*
-*   Remove default excerpt
+*   Remove Post Nabigation
 */
-
 
 
    

@@ -13,7 +13,7 @@
 
 get_header(); ?>
 
-<div class="section">
+<div class="section section--innerpage">
 	<div class="inner-page">
 		<div class="container">
 			<div class="row">
@@ -44,8 +44,5 @@ get_header(); ?>
 		</div>	
 	</div>	
 </div>
-
-
-
 
 <?php get_footer(); ?>

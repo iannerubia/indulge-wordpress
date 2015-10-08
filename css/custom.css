@@ -8,9 +8,9 @@ h2, .h2,
 h3, .h3,
 h4, .h4,
 h5, .h5 {
-	margin-top: 0;
+	margin-top: 15px;
 	margin-bottom: 20px;
-	font-family: 'Circular-Book';
+	color: #85becc;
 }
 
 .section .section-title,
@@ -23,36 +23,13 @@ h3, .h3,
 h4, .h4,
 h5, .h5 {
 	font-size: 21px;
-	margin-top: 0;
+	margin-top: 20px;
 	margin-bottom: 20px;
-	font-family: 'Circular-Book';
 }
 
 body {
-  	font-family: 'Circular-Book';
+	font-family: 'Lato', sans-serif;
   	font-size: 16px;
-}
-
-@font-face {
-	font-family: 'Circular-Book';
-	src: 
-		url('../fonts/Circular-Book.eot?#iefix') format('embedded-opentype'), 
-		url('../fonts/Circular-Book.woff') format('woff'), 
-		url('../fonts/Circular-Book.ttf')  format('truetype'), 
-		url('../fonts/Circular-Book.svg#Circular-Book') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Circular-Bold';
-	src: 
-		url('../fonts/Circular-Bold.eot?#iefix') format('embedded-opentype'),  
-		url('../fonts/Circular-Bold.woff') format('woff'), 
-		url('../fonts/Circular-Bold.ttf')  format('truetype'), 
-		url('../fonts/Circular-Bold.svg#Circular-Bold') format('svg');
-	font-weight: normal;
-	font-style: normal;
 }
 
 button,
@@ -104,13 +81,14 @@ button:active {
 	margin-left: 10px;
 	padding-top: 8px;
 	padding-bottom: 8px;
-	color: #fff;
+	color: #85becc;
 	transition: all .2s;
 }
 
 .navbar .navbar-collapse .navbar-nav > li > a.active {
 	background: #59ba4c;
 	border: 0;
+	color: #fff;
 }
 
 .active { border: 1px solid #fff; }
@@ -199,10 +177,6 @@ button:active {
 }
 
 
-
-
-
-
 /*
 * Forms
 */
@@ -288,7 +262,7 @@ button:active {
 
 .btn-opaque.active { 
 	background: inherit;
-	background-color:rgba(0,0,0,0.2);
+	background-color:rgba(0,0,0,0.1);
 	border: 2px solid #fff; 
 }
 
@@ -318,6 +292,9 @@ button:active {
 .border-top-light-blue { border-top: 15px solid #99dbec; }
 .section-one-column { min-height: 445px; }
 
+.lightblue { color: #85becc; }
+.bg-light-gray { background: #efefef; }
+
 
 /*
 * Default Section
@@ -326,18 +303,20 @@ button:active {
 	padding: 20px 0;
 	text-align: center;
 }
+.section .section-title {
+	color: #85becc;
+}
 
 .section--innerpage {
 	position: relative;
 	text-align: left;
 	min-height: 400px;
-	background: #efefef;
 }
 
 .section--innerpage  .content-area {
-	padding-top: 80px;
+	padding-top: 70px;
+	line-height: 1.6;
 }
-
 
 .section-zero-padding { padding: 0; }
 
@@ -352,7 +331,7 @@ button:active {
 
 .section-header  .inner {
 	display: table;
-	height: 480px;
+	height: 390px;
 }
 
 .section-header .box {
@@ -368,10 +347,16 @@ button:active {
 	top: 18px;
 }
 
+.section-header .box-hero-text .btn:hover {
+	background: #85becc;
+	color: #fff;
+	border-color: #85becc;
+	box-shadow: none;
+}
+
 .box-hero-text .box-title {
 	margin-top: 0;
 	margin-bottom: 25px;
-	font-size: 50px;
   	font-family: 'Circular-Bold';
 }
 
@@ -382,47 +367,6 @@ button:active {
 
 .section-header .box-hero-text .btn-primary.btn-lg {
 	padding: 3px 14px;
-}
-
-.section-header .box-form {}
-.section-header .box-form .form {
-	text-align: center;
-	margin-top: 50px;
-	position: relative;
-	padding: 30px;
-	background-color:rgba(0,0,0,0.6);
-}
-
-.section-header .box-form .btn-50 { width: 49%; }
-.box-form .box-title { margin: 0; }
-.arrow-dashed {
-	position: absolute;
-	background: url('../img/arrow-dashed.png') no-repeat;
-	bottom: 100px;
-	left: -77px;
-	width: 92px;
-	height: 239px;
-}
-
-.section-header .box-form .form .form-group { margin-bottom: 20px; }
-.section-header .box-form .form .form-group .form-control { }
-
-/* crossbrowser style placeholder attribute */
-.section-header .box-form .form-control::-webkit-input-placeholder {
-	color: #000 !important;
-	opacity: 1;
-}
-.section-header .box-form .form-control:-moz-placeholder {
-	color: #000 !important;
-	opacity: 1;
-}
-.section-header .box-form .form-control::-moz-placeholder {
-	color: #000 !important;
-	opacity: 1;
-}
-.section-header .box-form .form-control:-ms-input-placeholder {
-	color: #000 !important;
-	opacity: 1;
 }
 
 
@@ -449,7 +393,7 @@ button:active {
 	display: table;	
 	width: 100%;
 	position: relative;
-	height: 168px;		
+	height: 125px;		
 	background-color: rgba(122,185,113,.4);	
 }
 
@@ -469,7 +413,7 @@ button:active {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(22,179,232,.9);
+	background-color: rgba(133,190,204,.9);
     position: absolute;
     top: 0;
     left: 0;
@@ -477,7 +421,7 @@ button:active {
     opacity: 1;
 }
 
-.overlay .content { height: 168px; }
+.overlay .content { height: 125px; }
 .section-categories .box > .inner:hover .overlay {
 	top: -250px; 
 	opacity: .5;
@@ -493,6 +437,10 @@ button:active {
 	color: #7a7a78;
 }
 
+.section-indulgence .section-subtitle {
+	color: #9f9f9f;
+}
+
 .section-indulgence  .box 	{ 
 	margin-bottom: 20px;
 }
@@ -506,7 +454,7 @@ button:active {
 * Section Searchbar
 */
 .searchbar {
-	background-color: rgba(122,185,113,.4);	
+	background-color: rgba(255,255,255,.3);	
 }
 
 .searchbar .margin-control {
@@ -520,7 +468,6 @@ button:active {
 
 .searchbar .inner-submit {
 	padding: 30px;
-	background-color: rgba(0,0,0,.7);	
 }
 
 .searchbar .inner-submit .btn {
@@ -585,6 +532,11 @@ button:active {
 	color: #fff;
 }
 
+.section-indulgence .box a { 
+	color: #fff;
+	text-decoration: none;
+}
+
 .section-indulgence .box .btn {
 	min-width: 200px;
 	line-height: inherit;
@@ -622,10 +574,6 @@ button:active {
 }
 
 .box-giver {}
-.box-giver .box-title a {
-	text-decoration: none;
-	color: #fff;
-}
 .box-giver .box-title a:hover {
 	opacity: .8;
 }
@@ -638,12 +586,12 @@ button:active {
 .section-indulgence-giver  { background-color: #fafafa; }
 .section-indulgence-giver .section-title {
 	margin-bottom: 30px;
-	color: #7a7a7a;
+	color: #85becc;
 }
 
 .section-indulgence-giver .section-subtitle {
 	margin-bottom: 40px;
-	color: #9e9e9c;
+	color: #9f9f9f;
 }
 
 .section-indulgence-giver .box {
@@ -668,6 +616,7 @@ button:active {
 
 .section-indulgence-giver .box .item .profile-name {
 	margin-bottom: 10px;
+	color: #7a7a7a;
 }
 .section-indulgence-giver .box .item .profile-desc {}
 
@@ -682,7 +631,7 @@ button:active {
 .section-footer .widget .widget-title {
 	margin-bottom: 8px;
 	font-size: 18px;
-	color: #9f9f9f;
+	color: #85becc;
 	padding: 10px;
 	cursor: pointer;
 }
@@ -697,7 +646,7 @@ button:active {
 
 .section-footer .widget { }
 .section-footer .widget .widget-title {
-	color: #16b3e8;
+	color: #85becc;
 }
 
 .section-footer .widget ul,
@@ -776,6 +725,12 @@ button:active {
     color: #59ba4c;
 }
 
+/*
+* Section - Other Posts
+*/
+.section-otherpost .post-item .post-title {
+    color: #85becc;
+}
 
 
 /*
@@ -786,7 +741,7 @@ button:active {
 	margin-bottom: 30px;
 	font-size: 24px;
 	text-transform: uppercase;
-	color: #16b3e8;
+	color: #85becc;
 }
 
 .social-lists {
@@ -815,9 +770,6 @@ button:active {
 /*
 * Section Copyright
 */
-.footer-copyright {
-	background: #e6e4da;
-}
 
 
 /*	
@@ -879,9 +831,7 @@ video {
 .post-item .post-thumbnail {
 	margin-bottom: 20px;
 }
-.post-item .post-title {
-	text-transform: uppercase;
-}
+
 .post-item .post-meta {
 	margin-bottom: 20px;
 	color: #777;
@@ -904,15 +854,12 @@ video {
 }
 
 
-
 /*	
 *	Single Page
 */
 .single-post .post-thumbnail {
-	margin-bottom: 30px;
+	margin-bottom: 15px;
 }
-
-
 
 .disabled. .hidden {
 	display: none;
@@ -936,6 +883,14 @@ video {
 	}
 }
 
+/* Small devices (phones, 600px and up) */
+@media (min-width: 600px) {
+	/* ===== Section - Categories ====== */
+	.overlay .content {
+	    height: 163px;
+	}
+}
+
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
@@ -944,15 +899,27 @@ video {
 		padding: 40px 0;
 	}
 
-	.section .section-title {
-		font-size: 36px;
+	/* ===== Section - Header ====== */
+
+	.section-header .box-hero-text {
+	    padding-top: 130px;
 	}
+
+	.section-header  .inner {
+		height: 480px;
+	}
+	.box-hero-text .box-title { 
+		font-size: 60px; 
+	}
+
 
 	/* ===== Indulgence ====== */
 	.overlay .content { height: 215px; }
 
 	.section-indulgence .box .btn:last-child {  margin-left: 20px; }
-
+	.section-indulgence .section-title {
+		font-size: 24px;
+	}
 	/* ===== Indulgence Giver ====== */
 	.section-indulgence-giver .box .item .profile-img img {
 		width: 50%;
@@ -978,9 +945,9 @@ video {
 	/* ===== Header ====== */
 	.section-header .box { display: table-cell; }
 
-	.section-header .box-hero-text { padding-top: 0; }
-
-	.box-hero-text .box-title { font-size: 60px; }
+	.section-header .box-hero-text { 
+	    padding-top: 50px;
+	}
 
 	.box-hero-text .box-subtitle { 
 		padding: 0 150px;
