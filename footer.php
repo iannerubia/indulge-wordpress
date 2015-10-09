@@ -16,15 +16,7 @@
 			<div class="row"><h2 class="section-title">Join Us</h2></div>
 			<div class="row">
 				<div class="col-md-12">
-					<div class="div social-lists">
-						<a href="" class="iconn btn-facebook"><i class="fa fa-facebook"></i></a>
-						<a href="" class="iconn btn-twitter"><i class="fa fa-twitter"></i></a>
-						<a href="" class="iconn btn-green"><i class="fa fa-google"></i></a>					
-						<a href="" class="iconn btn-linkedin"><i class="fa fa-linkedin"></i></a>
-						<a href="" class="iconn btn-pinterest"><i class="fa fa-pinterest"></i></a>
-						<a href="" class="iconn btn-instagram"><i class="fa fa-instagram"></i></a>
-						<a href="" class="iconn btn-youtube"><i class="fa fa-youtube"></i></a>
-					</div>
+					<?php echo display_ultimate_social_icons(); ?>	
 				</div>
 			</div>
 		</div>

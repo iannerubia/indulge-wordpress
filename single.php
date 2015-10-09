@@ -35,7 +35,6 @@ get_header(); ?>
 
 					</main><!-- .site-main -->					
 				</div>
-
 			</div><!-- .content-area -->
 		</div> 
 	</div>
@@ -49,20 +48,26 @@ get_header(); ?>
 		</div>
 		<div class="row">
 			<div class="col-md-2"></div>
+
             <?php $the_query = new WP_Query( 'posts_per_page=2' ); ?>
             <?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>  
-			<div class="col-md-4">					
+
+			<div class="col-md-4">	
+
                 <!-- blog item -->
                 <article class="post-item">
-                	<div class="post-thumbnail">
-                    	<?php 
-                    		$img_arr = array(
-                    			'class' => 'img-responsive'
-                    		);
+                	<a href="<?php the_permalink(); ?>">
+	                	<div class="post-thumbnail">
+	                    	<?php 
+	                    		$img_arr = array(
+	                    			'class' => 'img-responsive'
+	                    		);
 
-                    		the_post_thumbnail( 'full', $img_arr ); 
-                    	?>                        		
-                	</div>
+	                    		the_post_thumbnail( 'full', $img_arr ); 
+	                    	?>                        		
+	                	</div>
+                	</a>
+
                     <h2 class="post-title h3"> <?php the_title(); ?></h2>
                 </article>            
 			</div>	

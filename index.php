@@ -22,28 +22,31 @@ get_header(); ?>
 		<div class="row">
 			<div id="primary" class="content-area">
 
-	            <?php $the_query = new WP_Query( 'posts_per_page=6' ); ?>
+	            <?php $the_query = new WP_Query( 'posts_per_page=8' ); ?>
 	            <?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>  
 
 					<div class="col-md-6">					
 						<main id="main" class="site-main" role="main">
 	                            <!-- blog item -->
 	                            <article class="post-item">
-	                            	<div class="post-thumbnail">
+	                            	<a href="<?php the_permalink(); ?>">
+		                            	<div class="post-thumbnail">
 
-	                                	<?php 
-	                                		$img_arr = array(
-	                                			'class' => 'img-responsive'
-	                                		);
+		                                	<?php 
+		                                		$img_arr = array(
+		                                			'class' => 'img-responsive'
+		                                		);
 
-	                                	the_post_thumbnail( 'full', $img_arr ); 
-	                                	?>
-	                                                       		
-	                            	</div>
+		                                	the_post_thumbnail( 'full', $img_arr ); 
+		                                	?>
+		                                                       		
+		                            	</div>
+	                            	</a>
+
 	                                <h2 class="post-title"> <?php the_title(); ?></h2>
 	                                <p class="post-meta">
 		                                <span><i class="fa fa-user"></i> <?php the_author(); ?></span>	                                
-		                                <span><i class="fa fa-clock-o"></i> <?php the_date('Y'); ?></span>
+		                                <span><i class="fa fa-clock-o"></i> <?php the_time('F j, Y'); ?></span>
 	                                </p>
 	                                <p class="post-excerpt">
 	                                    <?php echo(get_the_excerpt()); ?>                                  	

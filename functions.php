@@ -124,12 +124,18 @@ remove_action('wp_head', 'wp_shortlink_wp_head', 10, 0 );
 add_filter( 'show_admin_bar', '__return_false' );
 
 // Register Custom Navigation Walker
-require_once('wp_bootstrap_navwalker.php')
+require_once('wp_bootstrap_navwalker.php');
 
 
-/*
-*   Remove Post Nabigation
-*/
+
+
+function de_script() {
+    wp_dequeue_script( 'jquery' );
+    wp_deregister_script( 'jquery' );
+
+}
+add_action( 'wp_print_scripts', 'de_script', 100 );
+
 
 
    

@@ -20,22 +20,6 @@ $(document).ready( function() {
         $("#navbar-menu-wrapper").toggleClass("navbar-green zindex-999");
 	});
 
-	// Footer section functionalities
-	( function() {
-		var $viewWidth = $( window ).width();
-		var $box = $('.section-footer .box');
-		var $footerMenu = $('.section-footer .box ul.menu');
-		var $displayFooter = $('.section-footer .box .widget-title');	
-
-		if ( $viewWidth < 767 ) {
-			$('.section-footer .box .widget-title').click( function() {
-				$(this).next().slideToggle('hidden');
-			} );
-		} else {
-			$displayFooter.next().css("display", "block");
-			$box.removeClass('a-style-sm')
-		}		
-	})();
 
 });
 

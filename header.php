@@ -16,7 +16,7 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700,900' rel='stylesheet' type='text/css'>
-<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery.js"></script>
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 
 <!--[if lt IE 9]>
 <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/html5.js"></script>
@@ -46,24 +46,7 @@
 			</div>
 			<div id="navbar" class="navbar-collapse collapse hidden-xs">
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#" class="active">List Services</a></li>
-					<li><a href="#">Help</a></li>
-					<li><a href="#">Log in</a></li>
-					<!-- 
-						if user is login - Profile avatar
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-						<img style="border-radius: 50px;" src="<?php //echo get_stylesheet_directory_uri(); ?>/img/profile-marianne.png" alt="">
-						Marianne <b class="caret"></b></a>
-						<ul class="dropdown-menu dropdown-menu--lightblue ">
-							<li><a href="#">Your Listings</a></li>
-							<li><a href="#">Bookings</a></li>
-							<li><a href="#">Edit Profile</a></li>
-							<li><a href="#">Account</a></li>
-						</ul>
-					</li>
-					 -->
-
+					<li><a href="#" class="active"><i class="fa fa-long-arrow-left"></i> Back to Homepage</a></li>
 				</ul>
 				<?php
 					function disable() {

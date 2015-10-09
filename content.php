@@ -11,9 +11,13 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
 	<?php
+		$img_arr = array(
+			'class' => 'img-responsive'
+		);
 		// Post thumbnail.
-		twentyfifteen_post_thumbnail();
+		the_post_thumbnail( 'full', $img_arr );
 	?>
 
 	<header class="entry-header">
