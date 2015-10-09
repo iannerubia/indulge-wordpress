@@ -568,6 +568,10 @@ button:active {
     text-decoration: none;
 }
 
+.single .content-area .apss-social-share a {
+    text-decoration: none;
+}
+
 
 
 /*
@@ -623,7 +627,7 @@ button:active {
     }
     .section-header .inner { width: 100%; }
     
-    /* ===== Footer Social ====== */
+    /* ===== Wordpress Plugins ====== */
     .apss-social-share {
         padding-top: 30px;
     }
