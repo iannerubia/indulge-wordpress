@@ -145,7 +145,11 @@ button:active {
     color: #525451;
 }
 
-.navbar-green {  background-color: rgba(0,0,0,0.85); }
+.navbar-overlay {  
+    background-color: rgba(0,0,0,0.85);
+     transition: all .3s;
+}
+
 .zindex-999 { z-index: 99 !important; }
 
 #navbar-menu-wrapper {
@@ -212,7 +216,10 @@ button:active {
     color: #fff;
 }
 .btn-green:hover,
-.btn-green:focus {  background: #53ad47; }
+.btn-green:focus {  
+    background: #53ad47; 
+    color: #bbb;
+}
 
 .btn-lightblue { background: #16b3e8; }
 .btn-lightblue:hover,
@@ -300,7 +307,9 @@ button:active {
 
 .lightblue { color: #85becc; }
 .bg-light-gray { background: #efefef; }
-
+.zindex-999 {
+    z-index: 999 !important;
+}
 
 /*
 * Default Section
@@ -531,6 +540,11 @@ button:active {
     text-transform: uppercase;
 }
 
+.post-item .post-meta .fa{
+    margin-right: 3px;
+    letter-spacing: .1em;
+}
+
 .post-item .post-meta span {
     margin-right: 20px;
 }
@@ -606,13 +620,9 @@ button:active {
     }
 
     /* ===== Footer ====== */
-    .social-lists .iconn {
-        margin-right: 10px;
-        font-size: 26px;
-    }
-    .section-footer .widget .widget-title {
-        padding-left: 0;
-    }
+    .section-social {
+        padding: 20px 0;
+    } 
 }
 
 

@@ -31,7 +31,7 @@
 			</div><!--/.nav-collapse -->				
 		</div>
 	</div>
-	<nav class="navbar navbar-fixed-top navbar-green">
+	<nav class="navbar navbar-fixed-top navbar-overlay">
 		<div class="container">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarbar" aria-expanded="false" aria-controls="navbar">
@@ -45,24 +45,9 @@
 				</a>
 			</div>
 			<div id="navbar" class="navbar-collapse collapse hidden-xs">
-				<ul class="nav navbar-nav navbar-right">
+				<ul class="nav navbar-nav navbar-right hidden-xs">
 					<li><a href="#" class="active"><i class="fa fa-long-arrow-left"></i> Back to Homepage</a></li>
 				</ul>
-				<?php
-					function disable() {
-					    wp_nav_menu( array(
-					        'menu'              => 'menu-list-services',
-					        'theme_location'    => 'primary',
-					        'depth'             => 2,
-					        'container'         => 'div',
-					        'container_class'   => 'collapse navbar-collapse navbar-right',
-							'container_id'      => 'navbar-primary',
-					        'menu_class'        => 'nav navbar-nav',
-					        'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
-					        'walker'            => new wp_bootstrap_navwalker())
-					    );					
-					}
-				?>
 			</div><!--/.nav-collapse -->
 		</div>
 	</nav>

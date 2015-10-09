@@ -128,7 +128,11 @@ require_once('wp_bootstrap_navwalker.php');
 
 
 
-
+/**
+ *
+ * Remove jQuery
+ *
+ */
 function de_script() {
     wp_dequeue_script( 'jquery' );
     wp_deregister_script( 'jquery' );

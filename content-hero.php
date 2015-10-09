@@ -22,50 +22,6 @@
 					<p class="box-subtitle h3">Bringing Beauty, Relaxation and Wellness to the comfort of your home or wherever you are!</p>
 					<a href="" class="btn btn-primary btn-opaque h3 btn-lg active">How it works</a>
 				</div>
-				<!-- 	
-					Static-Signup Form; 
-					Disabled by client request - 09-22-15 
-						-->
-				<!-- Sign Up Form
-				<div class="col-sm-10 col-sm-offset-1 col-md-5 col-lg-4 box box-form">
-					<div class="form">
-						<div class="form-group">
-							<h1 class="h3 box-title">Sign Up Now</h1>
-						</div>	
-						<div class="form-group">
-							<input type="text" class="form-control" placeholder="First Name">
-						</div>							
-						<div class="form-group">
-							<input type="text" class="form-control" placeholder="Last Name">
-						</div>							
-						<div class="form-group">
-							<input type="text" class="form-control" placeholder="Email Address">
-						</div>
-													
-						<div class="form-group">
-							<input type="text" class="form-control" placeholder="Password">
-						</div>														
-						<div class="form-group">
-							<input type="text" class="form-control" placeholder="Zip Code">
-						</div>		
-						<div class="form-group">
-							<a href="#" class="btn btn-primary btn-50 btn-twitter"><i class="fa fa-twitter"></i> Sign Up</a>
-							<a href="#" class="btn btn-warning btn-50 btn-white"><i class="fa fa-google-plus"></i> Sign Up</a>
-						</div>		
-						<div class="form-group">
-							<a href="" class="btn btn-warning btn-block btn-facebook"><i class="fa fa-facebook"></i> Facebook Sign Up</a>
-						</div>
-						<div class="form-group">
-							<p class="text-center"><em>- or -</em></p>
-						</div>	
-						<div class="form-group last">
-							<a href="" class="btn btn-warning btn-block btn-green">Sign Up</a>
-						</div>
-						<span class="arrow-dashed hidden-sm hidden-xs hidden-md"></span>
-						<small class="text-center">By Signing Up I agree to the Terms of Service, Privacy Policy, Refund Policy, and Host Guarantee Terms</small>						
-					</div>
-				</div>
-				-->
 			</div>
 		</div>
 

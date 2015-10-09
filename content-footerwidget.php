@@ -8,8 +8,6 @@
  */
 ?>
 
-
-
 	<!-- Section Footer -->
 	<div class="section section-footer">
 		<div class="container">
