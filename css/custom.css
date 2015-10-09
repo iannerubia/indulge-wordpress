@@ -318,6 +318,7 @@ button:active {
     padding: 20px 0;
     text-align: center;
 }
+
 .section .section-title {
     color: #85becc;
 }
@@ -372,7 +373,6 @@ button:active {
 }
 
 
-
 /*
 * Section Footer
 */
@@ -392,9 +392,11 @@ button:active {
 .section-footer .widget ul > li > a {
     line-height: 1.9;
 }
+
 .section-footer .widget ul > li > a {
     color: #9f9f9f;
 }
+
 .section-footer .widget { }
 .section-footer .widget .widget-title {
     color: #85becc;
@@ -414,6 +416,7 @@ button:active {
     padding-right: 10px;
     color: #59ba4c;
 }
+
 .section-footer .a-style-sm .widget {
     margin-bottom: 10px;
     background-color: #efefef;
@@ -439,7 +442,6 @@ button:active {
 
 .section-footer .a-style-sm .widget  li > a {
     padding: 5px;
-    // margin-bottom: 7px;
     display: block;
     margin-left: 0px;
     text-decoration: none;
@@ -452,7 +454,6 @@ button:active {
     padding-left: 25px;
     color: #444;
 }
-
 
 .section-footer .a-style-sm .widget > li > a {}
 .section-footer .a-style-sm .widget ul li:before {
@@ -468,6 +469,7 @@ button:active {
     padding-right: 10px;
     color: #59ba4c;
 }
+
 
 /*
 * Section - Other Posts
@@ -487,8 +489,14 @@ button:active {
 .section-social .section-title {
     margin-bottom: 30px;
     font-size: 24px;
-    text-transform: uppercase;
     color: #85becc;
+}
+
+img.sfcm.sfsi_wicon {
+    border-radius: 100%;
+    -webkit-box-shadow: 0px 12px 22px -9px rgba(187,187,187,1) !important;
+    -moz-box-shadow: 0px 12px 22px -9px rgba(187,187,187,1) !important;
+    box-shadow: 0px 12px 22px -9px rgba(187,187,187,1) !important;
 }
 
 .norm_row.sfsi_wDiv {
@@ -498,19 +506,17 @@ button:active {
     text-align: center !important;
 }
 
-
 /*  
 *   Sidebar
 */
 .sidebar {
     color: #fff;
 }
+
 .sidebar .box {
     padding: 30px;
     background-color: #59ba4c;
 }
-
-
 
 
 /*  
@@ -587,7 +593,6 @@ button:active {
 }
 
 
-
 /*
 *
 * Responsive and Break points
@@ -596,19 +601,10 @@ button:active {
 
 /* Small devices (phones, 480px and up) */
 @media (min-width: 480px) {
-    /* ===== Footer ====== */
-    .social-lists .iconn {
-        margin-right: 7px;
-        font-size: 23px;
-    }
 }
 
 /* Small devices (phones, 600px and up) */
 @media (min-width: 600px) {
-    /* ===== Section - Categories ====== */
-    .overlay .content {
-        height: 163px;
-    }
 }
 
 
@@ -618,67 +614,20 @@ button:active {
     .section {
         padding: 40px 0;
     }
-
-    /* ===== Footer ====== */
-    .section-social {
-        padding: 20px 0;
-    } 
 }
 
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
 
-    /* ===== Header ====== */
-    .section-header .box { display: table-cell; }
-
-    .section-header .box-hero-text { 
-        padding-top: 50px;
-    }
-    .section-header .inner { width: 100%; }
-    
     /* ===== Wordpress Plugins ====== */
     .apss-social-share {
         padding-top: 30px;
-    }
-
-    /* ===== Footer Social ====== */
-    .social-lists {
-        width: 425px;   
-        height: 85px;
-        margin: 0 auto;
-    }
-
-    .social-lists .iconn {
-        display: inline-block;
-        float: left;    
-        margin-right: 20px;
-        font-size: 25px;
-        text-align: center;
-        border-radius: 100%;
-        color: #fff;
-    }
-
-    .social-lists .iconn:last-child {
-        margin-right: 0;
     }
 }
 
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-
-    /* Section - Indulgence Giver */
-    .section-indulgence-giver .box .item .profile-img img {
-        width: 100%;
-    }
 }
-
-
-
-
-
-
-
-
 
