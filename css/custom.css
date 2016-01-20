@@ -310,12 +310,16 @@ button:active {
 * Section Social
 */
 .section-social {
+  background: #5ba3b3;
   padding: 30px 0; }
-
-.section-social .section-title {
-  margin-bottom: 30px;
-  font-size: 24px;
-  color: #85becc; }
+  .section-social a:hover, .section-social a:focus {
+    color: #eee; }
+  .section-social .section-title {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 30px; }
+  .section-social * {
+    color: #fff; }
 
 img.sfcm.sfsi_wicon {
   border-radius: 100%;
@@ -325,9 +329,9 @@ img.sfcm.sfsi_wicon {
 
 .norm_row.sfsi_wDiv {
   float: inherit;
-  width: inherit !important;
   position: inherit !important;
-  text-align: center !important; }
+  text-align: center !important;
+  width: inherit !important; }
 
 .section-footer .widget ul {
   list-style: none;
@@ -354,10 +358,10 @@ img.sfcm.sfsi_wicon {
   text-decoration: none; }
 
 .post-item .post-thumbnail {
-  height: 400px;
+  height: 300px;
   overflow: hidden;
   position: relative;
-  width: 550px;
+  width: 100%;
   text-align: center;
   display: table; }
   .post-item .post-thumbnail a {
@@ -622,6 +626,8 @@ img.sfcm.sfsi_wicon {
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  .post-item .post-thumbnail {
+    width: 455px; }
   /* ===== Wordpress Plugins ====== */
   .apss-social-share {
     padding-top: 30px; }
@@ -631,3 +637,6 @@ img.sfcm.sfsi_wicon {
     padding: 50px 0; } }
 
 /* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .post-item .post-thumbnail {
+    width: 550px; } }

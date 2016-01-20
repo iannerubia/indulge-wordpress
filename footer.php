@@ -20,12 +20,12 @@
 				</div>
 			</div>
 		</div>
+		<!-- Copyright -->
+		<div class="section footer-copyright">
+			<small>© 2016 Indulge Now | <a href="#">Privacy Policy</a> | All Rights Reserved </small>
+		</div>			
 	</div>
 
-	<!-- Copyright -->
-	<div class="section footer-copyright">
-		<small>© 2015 Indulge Now | <a href="#">Privacy Policy</a> | All Rights Reserved </small>
-	</div>	
 <!-- 
 <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery-2.1.1.min.js"></script>
  -->

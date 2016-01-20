@@ -25,7 +25,7 @@ get_header(); ?>
 	            <?php $the_query = new WP_Query( 'posts_per_page=8' ); ?>
 	            <?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>  
 
-					<div class="col-md-6">					
+					<div class="col-md-6 col-lg-6">					
 						<main id="main" class="site-main" role="main">
 	                            <!-- blog item -->
 	                            <article class="post-item">

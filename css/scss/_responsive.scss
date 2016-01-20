@@ -1,10 +1,12 @@
 
 /* Small devices (phones, 480px and up) */
 @media (min-width: 480px) {
+
 }
 
 /* Small devices (phones, 600px and up) */
 @media (min-width: 600px) {
+
 }
 
 
@@ -26,6 +28,10 @@
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
 
+	.post-item .post-thumbnail {
+	    width: 455px;
+	}
+	
     /* ===== Wordpress Plugins ====== */
     .apss-social-share {
         padding-top: 30px;
@@ -39,10 +45,15 @@
 	    padding: 50px 0;
 	}
 
+
 }
 
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+	.post-item .post-thumbnail {
+	    width: 550px;
+	}
+
 }
 
