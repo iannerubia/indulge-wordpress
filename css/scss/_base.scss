@@ -1,0 +1,45 @@
+/*
+*   Base
+*/
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5 {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    color: #85becc;
+}
+
+.section .section-title,
+h1, .h1,
+h2, .h2 {
+    font-size: 30px;
+}
+
+h3, .h3,
+h4, .h4,
+h5, .h5 {
+    font-size: 21px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+body {
+    font-family: 'Poppins',sans-serif;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+a {
+    color: #85becc;
+}
+
+button,
+button:focus, 
+button:active {
+    background: none;
+    outline: 0 none;
+    border: 0;
+}

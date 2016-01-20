@@ -31,27 +31,23 @@ get_header(); ?>
 	                            <article class="post-item">
 	                            	<a href="<?php the_permalink(); ?>">
 		                            	<div class="post-thumbnail">
-
-		                                	<?php 
-		                                		$img_arr = array(
-		                                			'class' => 'img-responsive'
-		                                		);
-
-		                                	the_post_thumbnail( 'full', $img_arr ); 
-		                                	?>
-		                                                       		
+											<?php
+												$img_arr = array(
+													'class' => 'img-responsive'
+												);
+												// Post thumbnail.
+												the_post_thumbnail( 'full', $img_arr );
+											?>	
+											<div class="post-header">
+				                                <h2 class="post-title"> <?php the_title(); ?></h2>
+				                                <p class="post-meta">
+					                                <span><i class="fa fa-user"></i> <?php the_author(); ?></span>	                                
+					                                <span><i class="fa fa-clock-o"></i> <?php the_time('F j, Y'); ?></span>
+				                                </p>
+											</div>											             		
 		                            	</div>
-	                            	</a>
 
-	                                <h2 class="post-title"> <?php the_title(); ?></h2>
-	                                <p class="post-meta">
-		                                <span><i class="fa fa-user"></i> <?php the_author(); ?></span>	                                
-		                                <span><i class="fa fa-clock-o"></i> <?php the_time('F j, Y'); ?></span>
-	                                </p>
-	                                <p class="post-excerpt">
-	                                    <?php echo(get_the_excerpt()); ?>                                  	
-	                                </p>
-	                                <a href="<?php the_permalink() ?>" class="btn btn-green btn-sm">Read more</a>
+	                            	</a>
 	                            </article>            
 						</main><!-- .site-main -->
 					</div>	

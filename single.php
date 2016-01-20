@@ -33,7 +33,11 @@ get_header(); ?>
 					endwhile;
 					?>
 
-					</main><!-- .site-main -->					
+					</main><!-- .site-main -->		
+
+					<div class="post-header">
+						<p class="post-meta">Written by <?php the_author(); ?> on <?php the_time('F j, Y'); ?></p>
+					</div>					
 				</div>
 			</div><!-- .content-area -->
 		</div> 
@@ -47,13 +51,10 @@ get_header(); ?>
 			<h1 class="section-title">Related Article</h1>
 		</div>
 		<div class="row">
-			<div class="col-md-2"></div>
-
             <?php $the_query = new WP_Query( 'posts_per_page=2' ); ?>
             <?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>  
 
-			<div class="col-md-4">	
-
+			<div class="col-md-6">	
                 <!-- blog item -->
                 <article class="post-item">
                 	<a href="<?php the_permalink(); ?>">
@@ -64,11 +65,13 @@ get_header(); ?>
 	                    		);
 
 	                    		the_post_thumbnail( 'full', $img_arr ); 
-	                    	?>                        		
+	                    	?>  
+	                    	<div class="post-header">
+                   				<h2 class="post-title h2"> <?php the_title(); ?></h2>		                    		
+	                    	</div>
+                    	                      		
 	                	</div>
                 	</a>
-
-                    <h2 class="post-title h3"> <?php the_title(); ?></h2>
                 </article>            
 			</div>	
 	        <?php endwhile; wp_reset_postdata(); ?>

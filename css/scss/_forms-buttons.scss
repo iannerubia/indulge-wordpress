@@ -1,0 +1,127 @@
+
+/*
+* Forms
+*/
+.form {}
+.form .form-group   {}
+.form .form-group .form-control {
+    min-height: 36px;
+    border-radius: 2px;
+}
+
+
+/*
+* Buttons
+*/
+.btn {
+    padding: 6px 30px;
+    min-height: 36px;
+    border: 0;
+    line-height: 36px;
+    transition: all .2s;
+    border-radius: 2px;
+}
+
+.btn-lg { padding: 10px 16px; }
+
+.btn-green { 
+    background: #59ba4c; 
+    color: #fff;
+}
+.btn-green:hover,
+.btn-green:focus {  
+    background: #53ad47; 
+    color: #bbb;
+}
+
+.btn-lightblue { background: #16b3e8; }
+.btn-lightblue:hover,
+.btn-lightblue:focus {
+    background: #14a9db;
+    color: #dd4f3e;
+}
+
+.btn-white { 
+    background: #fff; 
+    color: #dd4f3e;
+}
+
+.btn-white:hover,
+.btn-white:focus {
+    background: #e6e6e6;
+    color: #dd4f3e;
+}
+
+.btn-blue,
+.btn-facebook   { background: #3b5998; }
+
+.btn-gplus      { background: #f44667; }
+
+.btn-twitter    { background: #67e0ee; }
+.btn-twitter:hover  { background: #5bc8d4; }
+
+.btn-instagram  { background: #2a5b83; }
+.btn-instagram:hover { background: #265378; }
+
+.btn-pinterest  { background: #cb2027; }
+.btn-pinterest:hover { background: #c21f24; }
+
+.btn-youtube    { background: #e52c27; }
+.btn-youtube:hover { background: #db2b25; }
+
+.btn-linkedin { background: #007ab5; }
+.btn-linkedin:hover { background: #0072ab; }
+
+.btn-blue:hover,
+.btn-blue:focus,
+.btn-facebook:hover, 
+.btn-facebook:focus { background: #324a80; }
+
+.btn-opaque {
+    min-height: 38px;   
+    font-size: 21px;
+    background-color:rgba(0,0,0,0.4);
+    border-radius: 2px;
+    min-width: 175px;
+    line-height: 38px;
+}
+
+.btn-opaque.active { 
+    background: inherit;
+    background-color:rgba(0,0,0,0.1);
+    border: 2px solid #fff; 
+}
+
+.btn-opaque.active:hover {
+    background: #000;
+    border-color: #000;
+}
+
+.btn-opaque:hover,
+.btn-opaque:focus { background-color: #000; }
+
+
+
+/*
+* Reuser, others etc
+*/
+.vertical-parent {
+    display: table;
+    width: 100%;
+}
+
+.vertical-child {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.border-top-light-blue { border-top: 15px solid #99dbec; }
+.section-one-column { min-height: 445px; }
+
+.lightblue { color: #85becc; }
+.bg-light-gray { background: #efefef; }
+.zindex-999 {
+    z-index: 999 !important;
+}
+
+.zindex-999 { z-index: 99 !important; }

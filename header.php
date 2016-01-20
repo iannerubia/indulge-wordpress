@@ -41,12 +41,12 @@
 					<span class="icon-bar"></span>
 				</button> 
 				<a class="navbar-brand" href="<?php echo bloginfo( 'home' ); ?>">
-					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png" alt="">
+					<img src="http://s3-us-west-2.amazonaws.com/indulgenow/assets/images/logo.png" alt="">
 				</a>
 			</div>
 			<div id="navbar" class="navbar-collapse collapse hidden-xs">
 				<ul class="nav navbar-nav navbar-right hidden-xs">
-					<li><a href="#" class="active"><i class="fa fa-long-arrow-left"></i> Back to Homepage</a></li>
+					<li><a href="http://www.beta.indulgenow.com/#/" class="active"><i class="fa fa-long-arrow-left"></i> Back to Homepage</a></li>
 				</ul>
 			</div><!--/.nav-collapse -->
 		</div>
@@ -55,7 +55,7 @@
 	<!-- Section - Hero -->
 	<?php 
 
-		if ( !is_front_page() && is_home() ) {
+		if ( is_front_page() && is_home() ) {
 
 			get_template_part( "content", "hero" );
 

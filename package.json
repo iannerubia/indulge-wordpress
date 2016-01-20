@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/iannerubia/indulge-wordpress/issues"
   },
-  "homepage": "https://github.com/iannerubia/indulge-wordpress#readme"
+  "homepage": "https://github.com/iannerubia/indulge-wordpress#readme",
+  "devDependencies": {
+    "gulp-sass": "^2.1.1"
+  }
 }
