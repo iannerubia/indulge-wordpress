@@ -34,25 +34,41 @@ get_header(); ?>
 					?>
 
 					</main><!-- .site-main -->		
-
 					<div class="post-header">
 						<p class="post-meta">Written by <?php the_author(); ?> on <?php the_time('F j, Y'); ?></p>
-					</div>					
+					</div>
 				</div>
 			</div><!-- .content-area -->
 		</div> 
 	</div>
 </div>	
 
-
 <div class="section section-otherpost bg-light-gray">
 	<div class="container">
 		<div class="row">
-			<h1 class="section-title">Related Article</h1>
+			<h1 class="section-title">Related Post</h1>
 		</div>
 		<div class="row">
-            <?php $the_query = new WP_Query( 'posts_per_page=2' ); ?>
-            <?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>  
+		<?php
+
+			$tags = wp_get_post_tags($post->ID);
+
+			if ($tags) {
+				$first_tag = $tags[0]->term_id;
+
+				$args = array(
+					'tag__in' => array($first_tag),
+					'post__not_in' => array($post->ID),
+					'posts_per_page'=>5,
+					'order' => 'ASC',
+					'caller_get_posts'=>1
+				);
+
+				$my_query = new WP_Query($args);
+
+				if( $my_query->have_posts() <= 1 ) {
+
+					while ($my_query->have_posts()) : $my_query->the_post(); ?>
 
 			<div class="col-md-6">	
                 <!-- blog item -->
@@ -63,7 +79,6 @@ get_header(); ?>
 	                    		$img_arr = array(
 	                    			'class' => 'img-responsive'
 	                    		);
-
 	                    		the_post_thumbnail( 'full', $img_arr ); 
 	                    	?>  
 	                    	<div class="post-header">
@@ -74,10 +89,17 @@ get_header(); ?>
                 	</a>
                 </article>            
 			</div>	
-	        <?php endwhile; wp_reset_postdata(); ?>
+				<?php endwhile;
+			}	
+				wp_reset_query();
+		}
+		?>
 		</div>
 	</div>
 </div>
 
 
-<?php get_footer(); ?>
+
+
+
+<?php get_footer();

@@ -15,8 +15,6 @@
  */
 
 get_header(); ?>
-
-
 <div class="section section--innerpage">
 	<div class="container">
 		<div class="row">

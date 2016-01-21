@@ -25,12 +25,6 @@
 </head>
 <body <?php body_class(); ?>>
 	<div id="top"></div>
-	<div id="navbar-menu-wrapper">
-		<div class="inner-menu-wrapper">
-			<div id="navbarbar" class="navbar-collapse collapse">
-			</div><!--/.nav-collapse -->				
-		</div>
-	</div>
 	<nav class="navbar navbar-fixed-top navbar-overlay">
 		<div class="container">
 			<div class="navbar-header">
