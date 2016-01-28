@@ -49,6 +49,9 @@
 				'separator'   => '<span class="screen-reader-text">, </span>',
 			) );
 		?>
+		<div class="post-header">
+			<p class="post-meta">Written by <?php the_author(); ?> on <?php the_time('F j, Y'); ?></p>
+		</div>
 	</div><!-- .entry-content -->
 
 </article><!-- #post-## -->

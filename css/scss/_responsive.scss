@@ -1,12 +1,28 @@
 
 /* Small devices (phones, 480px and up) */
 @media (min-width: 480px) {
+	.single {
+		.section-featured {
+			.featured-inner {
+				height: 260px;
 
+				.post-title {
+					font-size: 30px;
+				}
+			}
+		}
+	}
 }
 
 /* Small devices (phones, 600px and up) */
 @media (min-width: 600px) {
-
+	.single {
+		.section-featured {
+			.featured-inner {
+				height: 300px;
+			}
+		}
+	}
 }
 
 
@@ -22,6 +38,30 @@
 	    text-align: center;
 	    padding: 20px 0;
 	}
+
+    /* ===== Single ====== */
+	.single {
+		.section-featured {		
+			overflow: hidden;
+
+			.featured-inner {
+				overflow: hidden;
+				height: 380px;
+
+				.featured-title {
+					font-size: 30px;	
+
+					.post-title {
+						font-size: 30px;	
+					}
+				}
+			}
+		}
+
+		.content-area {
+			line-height: 1.8;
+		}
+	}
 }
 
 
@@ -32,20 +72,37 @@
 	    width: 455px;
 	}
 	
+	.error404 {
+		.section {
+			.content-area {
+				.section-title {
+					font-size: 60px;					
+				}
+			}
+		}
+	}
+
+    /* ===== Single ====== */
+	.single {
+		.section-featured {		
+			.featured-inner {
+				.featured-title {
+					font-size: 50px;	
+
+					.post-title {
+						padding: 0 15%;
+						font-size: 50px;
+					}
+				}
+			}
+		}
+	}
+
+
     /* ===== Wordpress Plugins ====== */
     .apss-social-share {
         padding-top: 30px;
     }
-
-	.error404 .section .content-area .section-title {
-		font-size: 60px;
-	}
-
-	.single .entry-header .entry-title {
-	    padding: 50px 0;
-	}
-
-
 }
 
 
@@ -53,6 +110,25 @@
 @media (min-width: 1200px) {
 	.post-item .post-thumbnail {
 	    width: 550px;
+	}
+
+    /* ===== Single ====== */
+	.single {
+		.section-featured {		
+			> img {
+				max-width: 100%;
+			}
+
+			.featured-inner {
+				.featured-title {
+					font-size: 50px;	
+
+					.post-title {
+						font-size: 50px;	
+					}
+				}
+			}
+		}
 	}
 
 }

@@ -18,7 +18,6 @@
 }
 
 .section--innerpage  .content-area {
-	padding-top: 70px;
 	line-height: 1.6;
 }
 
@@ -355,15 +354,61 @@ img.sfcm.sfsi_wicon {
 	padding-bottom: 0;
 	margin-top: 20px;
 }
-
-
 /*  
 *   Single Page
 */
+
+
 .single {
+	.single-post {
+		text-align: left;
+	}
+	.section-featured {
+		padding: 0;
+		position: relative;
+		overflow: hidden;
+
+		.featured-inner {
+			position: relative;
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			height: 215px;
+			overflow: hidden;
+			background-color: rgba(0,0,0,.7);
+			transition: all .5s;
+
+			&:hover, &:focus {
+				background-color: rgba(0,0,0,.85);
+			}
+
+			.post-title {
+				font-size: 20px;
+				color: #fff;
+				letter-spacing: .06em;
+			}
+		}
+
+		> img.img-responsive {
+			width: 100%;
+			left: 0;	
+			position: absolute;
+			top: 0;
+		}
+	}
+
 	.entry-header .entry-title {
 		font-size: 30px;
 	}    
+
+	.post-meta {
+		color: #888;
+		padding: 50px 0 20px;
+		text-align: center;
+		text-transform: uppercase;
+		letter-spacing: .1em;
+	}
+
 	.content-area {
 
 		a {
@@ -393,8 +438,6 @@ img.sfcm.sfsi_wicon {
 	}
 }
 
-
-
 /* ===== Error Page ===== */
 .error404 .section .content-area {
 	text-align: center;
@@ -402,4 +445,16 @@ img.sfcm.sfsi_wicon {
 
 .error404 .error-404 .btn {
 	margin-top: 30px;
+}
+
+.error404 {
+	margin-top: 150px
+}
+
+/* ===== PLUGINS ===== */
+.apss-social-share.apss-theme-1.clearfix {
+    text-align: center;
+}
+.apss-single-icon {
+    display: inline-block;
 }

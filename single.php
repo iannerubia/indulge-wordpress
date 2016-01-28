@@ -6,10 +6,23 @@
  * @subpackage Twenty_Fifteen
  * @since Twenty Fifteen 1.0
  */
-
 get_header(); ?>
 
-
+<div class="section section-featured">
+	<?php
+		$img_arr = array(
+			'class' => 'img-responsive'
+		);
+		the_post_thumbnail( 'full', $img_arr ); 
+	?>  
+	<div class="featured-inner">
+		<div class="featured-title">
+			<h1 class="post-title">
+				<?php the_title(); ?>
+			</h1>
+		</div>		
+	</div>
+</div>
 
 <div class="section section--innerpage">
 	<div class="container">
@@ -17,26 +30,30 @@ get_header(); ?>
 			<div id="primary" class="content-area">
 				<div class="col-md-8 col-md-offset-2">
 					<main id="main" class="site-main" role="main">
+						<?php 
+							if ( have_posts() ) {
 
-					<?php
-					// Start the loop.
-					while ( have_posts() ) : the_post();
-
-						/*
-						 * Include the post format-specific template for the content. If you want to
-						 * use this in a child theme, then include a file called called content-___.php
-						 * (where ___ is the post format) and that will be used instead.
-						 */
-						get_template_part( 'content', 'get_post_format()' );
-
-					// End the loop.
-					endwhile;
-					?>
-
+								while ( have_posts() ) {
+								// the_author();	
+								the_post();
+							
+								the_content();						
+								} // end while
+							} // end if
+						?>	
 					</main><!-- .site-main -->		
-					<div class="post-header">
-						<p class="post-meta">Written by <?php the_author(); ?> on <?php the_time('F j, Y'); ?></p>
-					</div>
+				</div>
+				<div class="post-meta col-md-12">
+				<span class="post-author">Written by
+					<?php
+						if (is_singular()) {
+						    $address = get_the_author_meta('display_name', $author_id);
+						}
+						echo $address;
+					?>			
+				</span>
+				<span class="post-date">, <?php the_time('F j, Y'); ?></span>
+
 				</div>
 			</div><!-- .content-area -->
 		</div> 
@@ -59,7 +76,7 @@ get_header(); ?>
 				$args = array(
 					'tag__in' => array($first_tag),
 					'post__not_in' => array($post->ID),
-					'posts_per_page'=>5,
+					'posts_per_page'=>4,
 					'order' => 'ASC',
 					'caller_get_posts'=>1
 				);
@@ -71,23 +88,22 @@ get_header(); ?>
 					while ($my_query->have_posts()) : $my_query->the_post(); ?>
 
 			<div class="col-md-6">	
-                <!-- blog item -->
-                <article class="post-item">
-                	<a href="<?php the_permalink(); ?>">
-	                	<div class="post-thumbnail">
-	                    	<?php 
-	                    		$img_arr = array(
-	                    			'class' => 'img-responsive'
-	                    		);
-	                    		the_post_thumbnail( 'full', $img_arr ); 
-	                    	?>  
-	                    	<div class="post-header">
-                   				<h2 class="post-title h2"> <?php the_title(); ?></h2>		                    		
-	                    	</div>
-                    	                      		
-	                	</div>
-                	</a>
-                </article>            
+				<!-- blog item -->
+				<article class="post-item">
+					<a href="<?php the_permalink(); ?>">
+						<div class="post-thumbnail">
+							<?php 
+								$img_arr = array(
+									'class' => 'img-responsive'
+								);
+								the_post_thumbnail( 'full', $img_arr ); 
+							?>  
+							<div class="post-header">
+								<h2 class="post-title h2"> <?php the_title(); ?></h2>		                    		
+							</div>			
+						</div>
+					</a>
+				</article>            
 			</div>	
 				<?php endwhile;
 			}	
@@ -97,9 +113,4 @@ get_header(); ?>
 		</div>
 	</div>
 </div>
-
-
-
-
-
 <?php get_footer();

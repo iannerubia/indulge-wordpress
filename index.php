@@ -44,18 +44,13 @@ get_header(); ?>
 				                                </p>
 											</div>											             		
 		                            	</div>
-
 	                            	</a>
 	                            </article>            
 						</main><!-- .site-main -->
 					</div>	
-
 	            <?php endwhile; wp_reset_postdata(); ?>
-
 			</div><!-- .content-area -->
 		</div> 
 	</div>
 </div>	
-
-
 <?php get_footer(); ?>
