@@ -164,27 +164,32 @@
 /*
 * Section - Other Posts
 */
-.section-otherpost .section-title {
-	margin-bottom: 50px;
-}
+.section-otherpost {
+	.section-title {
+		margin-bottom: 50px;		
+	}
 
-.section-otherpost .post-thumbnail .post-item {
-	opacity: 0;
-}
+	.post-item {
+		opacity: 1;			
+	}
 
-.section-otherpost .post-item .post-thumbnail .post-header {
-	display: table-cell;
-	vertical-align: middle;    
-}
+	.post-thumbnail {
 
-.section-otherpost .post-item .post-thumbnail .post-header {
-	opacity: 0;
-}
+		.post-header {
+			display: table-cell;
+			vertical-align: middle;  
 
-.section-otherpost .post-item .post-thumbnail:hover .post-header {
-	color: #85becc;
-	opacity: 1;
-	transition: all .5s;
+		}
+
+		&:hover, &:focus {
+
+			.post-header {
+				color: #85becc;		
+				opacity: 1;
+				transition: all .5s;
+			}
+		}
+	}
 }
 
 
@@ -279,21 +284,23 @@ img.sfcm.sfsi_wicon {
 			position: absolute;   
 			top: 50%;   
 			left: 50%;
+			opacity: 1; 	
 			-webkit-transform: translate(-50%, -50%);
 			transform: translate(-50%, -50%); 
 		}
 
 		&:hover {
+
 			> img {
 				min-height: 102%;
 				min-width: 102%;   
-				opacity: .3; 
-				transition: all .5s;				
+				opacity: 1; 
+				transition: all .5s;			
 			}
 
 			.post-header	{
 				color: #333;
-				opacity: 1;
+				opacity: 0;
 				transition: all .5s;				
 			}
 
@@ -311,28 +318,44 @@ img.sfcm.sfsi_wicon {
 			padding: 20px;
 			text-align: center;
 			vertical-align: middle;
-			opacity: 0; 
+			background-color: rgba(138, 197, 212, 0.95);
 
 			.post-title {
 				text-transform: uppercase;
+				color: #fff;
 			}
 		}
 	}    
 }
 
-.content-area .post-thumbnail:hover,
-.content-area .post-thumbnail:focus,
-.post-item .post-thumbnail:hover,
-.post-item .post-thumbnail:focus {
-	opacity: .7;
-	transition: all .4s;    
+.content-area {
+
+	.post-thumbnail {
+
+		&:hover, &:focus {
+			opacity: .7;
+			transition: all .4s;
+		}
+	}
 }
 
-.post-item .post-meta {
-	margin-bottom: 20px;
-	color: #777;
-	font-size: 12px;
-	text-transform: uppercase;
+.post-item {
+
+	.post-thumbnail {
+
+		&:hover, &:focus {
+			opacity: 1;
+			transition: all .4s;   
+		}
+	}
+
+	.post-meta {
+		margin-bottom: 20px;
+		color: #fff;
+		font-size: 12px;
+		letter-spacing: .05em;
+		text-transform: uppercase;		
+	}
 }
 
 .post-item .post-meta .fa{
