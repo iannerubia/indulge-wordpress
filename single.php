@@ -99,7 +99,7 @@ get_header(); ?>
 								the_post_thumbnail( 'full', $img_arr ); 
 							?>  
 							<div class="post-header">
-								<h2 class="post-title h2"> <?php the_title(); ?></h2>		                    		
+								<h3 class="post-title h3"> <?php the_title(); ?></h3>		                   
 							</div>			
 						</div>
 					</a>

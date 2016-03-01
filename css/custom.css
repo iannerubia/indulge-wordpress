@@ -162,7 +162,7 @@ blockquote.aligncenter {
 * Section Hero
 */
 .section-header {
-  background: url("https://s3-us-west-2.amazonaws.com/indulgenow/assets/images/categories/profile/banner_massage.jpg") no-repeat;
+  background: url("//s3-us-west-2.amazonaws.com/indulgenow/assets/images/categories/profile/banner_massage.jpg") no-repeat;
   background-size: cover;
   color: #fff; }
 
@@ -290,7 +290,7 @@ blockquote.aligncenter {
 .section-social {
   background: #5ba3b3;
   padding: 30px 0; }
-  .section-social a:hover, .section-social a:focus {
+  .section-social a:hover {
     color: #eee; }
   .section-social .section-title {
     color: #fff;
@@ -331,53 +331,53 @@ img.sfcm.sfsi_wicon {
 */
 .post-item {
   margin-bottom: 35px; }
-
-.post-item a {
-  text-decoration: none; }
-
-.post-item .post-thumbnail {
-  height: 300px;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-  text-align: center;
-  display: table; }
-  .post-item .post-thumbnail a {
+  .post-item a {
     text-decoration: none; }
-  .post-item .post-thumbnail > img {
-    display: block;
-    min-height: 100%;
-    min-width: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    opacity: 1;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%); }
-  .post-item .post-thumbnail:hover > img {
-    min-height: 102%;
-    min-width: 102%;
-    opacity: 1;
-    transition: all .5s; }
-  .post-item .post-thumbnail:hover .post-header {
-    color: #333;
-    opacity: 0;
-    transition: all .5s; }
-  .post-item .post-thumbnail:hover * {
-    color: #222;
-    transition: all .5s; }
-  .post-item .post-thumbnail .post-header {
+  .post-item .post-thumbnail {
+    height: 300px;
+    overflow: hidden;
     position: relative;
-    height: 400px;
-    display: table-cell;
     width: 100%;
-    padding: 20px;
     text-align: center;
-    vertical-align: middle;
-    background-color: rgba(138, 197, 212, 0.95); }
-    .post-item .post-thumbnail .post-header .post-title {
-      text-transform: uppercase;
-      color: #fff; }
+    display: table; }
+    .post-item .post-thumbnail a {
+      text-decoration: none; }
+    .post-item .post-thumbnail > img {
+      display: block;
+      min-height: 100%;
+      min-width: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      opacity: 1;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); }
+    .post-item .post-thumbnail:hover > img {
+      min-height: 102%;
+      min-width: 102%;
+      opacity: 1;
+      transition: all .5s; }
+    .post-item .post-thumbnail:hover * {
+      color: #222;
+      transition: all .5s; }
+    .post-item .post-thumbnail .post-header {
+      position: relative;
+      height: 400px;
+      display: table-cell;
+      width: 100%;
+      text-align: center;
+      vertical-align: middle; }
+      .post-item .post-thumbnail .post-header .post-title {
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.4);
+        color: #fff;
+        font-weight: 100;
+        line-height: 1.4;
+        margin-bottom: 0;
+        text-align: left;
+        padding: 25px 20px;
+        position: absolute;
+        width: 100%; }
 
 .content-area .post-thumbnail:hover, .content-area .post-thumbnail:focus {
   opacity: .7;
@@ -433,7 +433,8 @@ img.sfcm.sfsi_wicon {
     .single .section-featured .featured-inner .post-title {
       font-size: 20px;
       color: #fff;
-      letter-spacing: .06em; }
+      letter-spacing: .06em;
+      line-height: 1.4; }
   .single .section-featured > img.img-responsive {
     width: 100%;
     left: 0;

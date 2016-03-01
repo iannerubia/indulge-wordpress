@@ -25,27 +25,23 @@ get_header(); ?>
 
 					<div class="col-md-6 col-lg-6">					
 						<main id="main" class="site-main" role="main">
-	                            <!-- blog item -->
-	                            <article class="post-item">
-	                            	<a href="<?php the_permalink(); ?>">
-		                            	<div class="post-thumbnail">
-											<?php
-												$img_arr = array(
-													'class' => 'img-responsive'
-												);
-												// Post thumbnail.
-												the_post_thumbnail( 'full', $img_arr );
-											?>	
-											<div class="post-header">
-				                                <h2 class="post-title"> <?php the_title(); ?></h2>
-				                                <p class="post-meta">
-					                                <span><i class="fa fa-user"></i> <?php the_author(); ?></span>	                                
-					                                <span><i class="fa fa-clock-o"></i> <?php the_time('F j, Y'); ?></span>
-				                                </p>
-											</div>											             		
-		                            	</div>
-	                            	</a>
-	                            </article>            
+                            <!-- blog item -->
+                            <article class="post-item">
+                            	<a href="<?php the_permalink(); ?>">
+	                            	<div class="post-thumbnail">
+										<?php
+											$img_arr = array(
+												'class' => 'img-responsive'
+											);
+											// Post thumbnail.
+											the_post_thumbnail( 'full', $img_arr );
+										?>	
+										<div class="post-header">
+			                                <h3 class="post-title"> <?php the_title(); ?></h3>		
+										</div>											             		
+	                            	</div>
+                            	</a>
+                            </article>            
 						</main><!-- .site-main -->
 					</div>	
 	            <?php endwhile; wp_reset_postdata(); ?>

@@ -28,7 +28,7 @@
 * Section Hero
 */
 .section-header {
-	background: url('https://s3-us-west-2.amazonaws.com/indulgenow/assets/images/categories/profile/banner_massage.jpg') no-repeat;
+	background: url('//s3-us-west-2.amazonaws.com/indulgenow/assets/images/categories/profile/banner_massage.jpg') no-repeat;
 	background-size: cover;
 	//background: #85bfcc;
 	color: #fff;
@@ -202,7 +202,7 @@
 
 	a {
 
-		&:hover, &:focus {
+		&:hover {
 			color: #eee;
 		}
 	}
@@ -257,9 +257,6 @@ img.sfcm.sfsi_wicon {
 */
 .post-item {
 	margin-bottom: 35px;
-}
-
-.post-item {
 
 	a {
 		text-decoration: none;        
@@ -299,9 +296,9 @@ img.sfcm.sfsi_wicon {
 			}
 
 			.post-header	{
-				color: #333;
-				opacity: 0;
-				transition: all .5s;				
+				//color: #333;
+				//opacity: 0;
+				//transition: all .5s;				
 			}
 
 			*	{
@@ -315,14 +312,20 @@ img.sfcm.sfsi_wicon {
 			height: 400px;
 			display: table-cell;
 			width: 100%;
-			padding: 20px;
 			text-align: center;
 			vertical-align: middle;
-			background-color: rgba(138, 197, 212, 0.95);
 
 			.post-title {
-				text-transform: uppercase;
+				bottom: 0;
+				background: rgba(0,0,0,.4);
 				color: #fff;
+				font-weight: 100;
+				line-height: 1.4;
+				margin-bottom: 0;
+				text-align: left;		
+				padding: 25px 20px;
+				position: absolute;	
+				width: 100%;
 			}
 		}
 	}    
@@ -409,6 +412,7 @@ img.sfcm.sfsi_wicon {
 				font-size: 20px;
 				color: #fff;
 				letter-spacing: .06em;
+				line-height: 1.4;
 			}
 		}
 
