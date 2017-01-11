@@ -13,7 +13,7 @@ function child_scripts_styles() {
     wp_enqueue_style( 'twentyfifteen-style', get_stylesheet_uri() );
 
     /* ===== Custom Styles ===== */
-    wp_enqueue_style( 'custom', get_stylesheet_directory_uri().'/css/custom.css', array(), '1.0' );
+    wp_enqueue_style( 'custom', get_stylesheet_directory_uri().'/css/custom.css', array() );
 
     /* ===== Font Awesome ===== */
     wp_enqueue_style( 'font-awesome', get_stylesheet_directory_uri().'/css/font-awesome.min.css', array(), '4.4' );
